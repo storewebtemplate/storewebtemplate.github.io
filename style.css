@@ -103,21 +103,74 @@ header {
 
 
 /* User Actions */
-.user-actions a {
+.user-actions {
+  position: relative;
+}
+
+.user-toggle {
+  background: none;
+  border: none;
   color: #333;
-  text-decoration: none;
-  margin-left: 10px;
-  font-size: 14px;
-  display: inline-flex;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none; /* Ocultar por defecto en pantallas grandes */
+  margin-right: 10px;
+}
+
+.user-links {
+  display: flex;
   align-items: center;
-  transition: color 0.3s ease;
+  gap: 15px; /* Espaciado entre enlaces */
 }
-.user-actions a:hover {
-  color: #5cb85c;
+
+.user-links a {
+  color: #333; /* Texto negro */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 1rem;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
 }
-.user-actions a i {
+
+.user-links a:hover {
+  color: #5cb85c; /* Cambiar color al pasar el cursor */
+}
+
+.user-links i {
   margin-right: 5px;
 }
+
+@media (max-width: 768px) {
+  .user-toggle {
+    display: block; /* Mostrar el botón de toggle en móviles */
+  }
+
+  .user-links {
+    display: none; /* Ocultar enlaces por defecto en móviles */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Posicionamiento relativo al botón */
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 100;
+  }
+
+  .user-links a {
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .user-links a:hover {
+    background: #f1f1f1;
+  }
+}
+
+
+
 
 /* ================================================================
    NAVEGACIÓN

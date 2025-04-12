@@ -97,4 +97,17 @@ document.addEventListener('DOMContentLoaded', function() {
       filters.style.display = 'block';
     }
   });
+  
+  
+  
+  const userToggle = document.querySelector('.user-toggle');
+  const userLinks = document.querySelector('.user-links');
+
+  userToggle.addEventListener('click', function() {
+    if (userLinks.style.display === 'block') {
+      userLinks.style.display = 'none';
+    } else {
+      userLinks.style.display = 'block';
+    }
+  });
 });
