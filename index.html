@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda Online Premium - La Experiencia Definitiva</title>
+  <meta name="description" content="Tienda Online Premium con productos de vanguardia, ofertas exclusivas y experiencia de usuario de nivel superior.">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabecera -->
+  <header>
+    <div class="header-top">
+      <div class="container header-container">
+        <div class="logo" aria-label="Logo de Tienda Premium">
+          <h1>Tienda Premium</h1>
+        </div>
+        <div class="search-bar" role="search">
+          <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos">
+          <button aria-label="Buscar"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-actions">
+          <a href="#" aria-label="Mi Cuenta"><i class="fas fa-user"></i><span> Mi Cuenta</span></a>
+          <a href="#" aria-label="Favoritos"><i class="fas fa-heart"></i><span> Favoritos</span></a>
+          <a href="#" aria-label="Carrito"><i class="fas fa-shopping-cart"></i><span> Carrito (0)</span></a>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="container nav-container">
+        <a href="index.html">Inicio</a>
+        <a href="products.html">Productos</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Novedades</a>
+        <a href="#">Contacto</a>
+      </div>
+      <!-- Menú de hamburguesa para dispositivos móviles -->
+      <button class="menu-toggle" aria-label="Menú"><i class="fas fa-bars"></i></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección Hero -->
+    <section class="hero" role="region" aria-label="Promociones Destacadas">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <h2>Productos de Vanguardia para Ti</h2>
+          <p>Disfruta de una experiencia de compra excepcional con calidad insuperable.</p>
+          <a href="#" class="cta-button">Explorar Ofertas</a>
+        </div>
+        <div class="hero-slider" aria-label="Slider de Promociones">
+          <img src="images/slider1.jpg" alt="Promoción Destacada 1">
+          <img src="images/slider2.jpg" alt="Promoción Destacada 2">
+          <img src="images/slider3.jpg" alt="Promoción Destacada 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorías Destacadas -->
+    <section class="featured-categories" role="region" aria-label="Categorias Destacadas">
+      <div class="container">
+        <h2>Categorias Destacadas</h2>
+        <div class="category-grid">
+          <div class="category-card">
+            <img src="images/category1.jpg" alt="Electronica">
+            <h3>Electronica</h3>
+          </div>
+          <div class="category-card">
+            <img src="images/category2.jpg" alt="Moda">
+            <h3>Moda</h3>
+          </div>
+          <div class="category-card">
+            <img src="images/category3.jpg" alt="Hogar">
+            <h3>Hogar</h3>
+          </div>
+          <div class="category-card">
+            <img src="images/category4.jpg" alt="Deportes">
+            <h3>Deportes</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Productos Mejorada -->
+    <section class="products" role="region" aria-label="Productos Destacados">
+      <div class="container">
+        <h2>Productos Destacados</h2>
+        <div class="product-grid">
+          <!-- Producto 1 -->
+          <article class="product-card">
+            <div class="product-image">
+              <img src="images/product1.jpg" alt="Producto 1">
+              <button class="quick-view" data-product="1" aria-label="Vista Rapida Producto 1"><i class="fas fa-search-plus"></i></button>
+            </div>
+            <div class="product-details">
+              <h3>Producto 1</h3>
+              <p>Innovador y de alta calidad.</p>
+              <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">$19.99</div>
+              <div class="product-actions">
+                <button class="add-to-cart" aria-label="Añadir Producto 1 al Carrito">Añadir al Carrito</button>
+                <button class="view-details" aria-label="Ver Detalles Producto 1">Ver Detalles</button>
+              </div>
+            </div>
+          </article>
+          <!-- Producto 2 -->
+          <article class="product-card">
+            <div class="product-image">
+              <img src="images/product2.jpg" alt="Producto 2">
+              <button class="quick-view" data-product="2" aria-label="Vista Rapida Producto 2"><i class="fas fa-search-plus"></i></button>
+            </div>
+            <div class="product-details">
+              <h3>Producto 2</h3>
+              <p>Estilo moderno y durable.</p>
+              <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <div class="price">$29.99</div>
+              <div class="product-actions">
+                <button class="add-to-cart" aria-label="Añadir Producto 2 al Carrito">Añadir al Carrito</button>
+                <button class="view-details" aria-label="Ver Detalles Producto 2">Ver Detalles</button>
+              </div>
+            </div>
+          </article>
+          <!-- Producto 3 -->
+          <article class="product-card">
+            <div class="product-image">
+              <img src="images/product3.jpg" alt="Producto 3">
+              <button class="quick-view" data-product="3" aria-label="Vista Rapida Producto 3"><i class="fas fa-search-plus"></i></button>
+            </div>
+            <div class="product-details">
+              <h3>Producto 3</h3>
+              <p>Calidad premium sin concesiones.</p>
+              <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="price">$39.99</div>
+              <div class="product-actions">
+                <button class="add-to-cart" aria-label="Añadir Producto 3 al Carrito">Añadir al Carrito</button>
+                <button class="view-details" aria-label="Ver Detalles Producto 3">Ver Detalles</button>
+              </div>
+            </div>
+          </article>
+          <!-- Agregar mas productos de manera dinamica -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal de Vista Rápida -->
+    <aside id="quickViewModal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="Cerrar Modal"><i class="fas fa-times"></i></button>
+        <div class="modal-body">
+          <!-- Contenido cargado dinamicamente -->
+          <img src="" alt="" id="modalProductImage">
+          <div class="modal-details">
+            <h3 id="modalProductTitle"></h3>
+            <p id="modalProductDescription"></p>
+            <div id="modalProductRating"></div>
+            <div class="price" id="modalProductPrice"></div>
+            <button class="add-to-cart-modal" aria-label="Añadir al carrito">Añadir al Carrito</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Newsletter -->
+    <section class="newsletter" role="region" aria-label="Boletin de Noticias">
+      <div class="container">
+        <h2>Suscribete a Nuestro Boletin</h2>
+        <p>Recibe novedades y ofertas exclusivas directo a tu inbox.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Ingresa tu correo" aria-label="Correo Electronico">
+          <button aria-label="Suscribete">Suscribirse</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-section about">
+        <h3>Acerca de</h3>
+        <p>Nuestra tienda ofrece productos premium con excelencia en cada detalle. Innovacion, calidad y servicio excepcional.</p>
+      </div>
+      <div class="footer-section links">
+        <h3>Soporte al Cliente</h3>
+        <ul>
+          <li><a href="#">Contactanos</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Politica de Devoluciones</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social">
+        <h3>Conectate con Nosotros</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Tienda Premium. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+/* ================================================================
+   Estilos específicos para la página de productos (Listado)
+   ================================================================ */
+.products-page {
+  background: #f8f8f8;
+  padding: 30px 0;
+}
+
+.products-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Barra de Filtros */
+.filters {
+  flex: 0 0 250px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.filters h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+.filter-group {
+  margin-bottom: 20px;
+}
+.filter-group h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.filter-group ul {
+  list-style: none;
+}
+.filter-group li {
+  margin-bottom: 8px;
+}
+.filter-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.filter-group input[type="checkbox"],
+.filter-group input[type="radio"] {
+  margin-right: 8px;
+}
+.apply-filters {
+  background: #5cb85c;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+.apply-filters:hover {
+  background: #4aa64a;
+}
+
+/* Listado de Productos */
+.product-listing {
+  flex: 1;
+}
+
+.listing-header h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+.listing-header {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+  justify-content: space-between; /* Espacio entre el título y las opciones de ordenamiento */
+  align-items: center; /* Alinear verticalmente los elementos */
+  margin-bottom: 20px;
+}
+
+.sort-options {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaciado entre las etiquetas y el select */
+}
+
+.sort-options label {
+  margin: 0;
+  font-size: 1rem; /* Ajustar el tamaño de fuente */
+}
+
+.sort-options select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  outline: none;
+  font-size: 1rem; /* Ajustar el tamaño de fuente */
+}
+
+@media (max-width: 768px) {
+  .listing-header {
+    flex-direction: column; /* Colocar elementos en columna en pantallas pequeñas */
+    align-items: flex-start; /* Alinear a la izquierda */
+  }
+
+  .sort-options {
+    margin-top: 10px; /* Espaciado superior para separarlo del título */
+  }
+}
+
+
+/* Paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.page-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+.page-number:hover {
+  background: #eee;
+}
+.page-number.current {
+  background: #5cb85c;
+  color: #fff;
+  border-color: #5cb85c;
+}
+.page-number.prev,
+.page-number.next {
+  border: none;
+  color: #5cb85c;
+}
+.page-number.prev:hover,
+.page-number.next:hover {
+  background: none;
+  color: #4aa64a;
+}
+
+/* Responsividad para la página de productos */
+@media (max-width: 992px) {
+  .products-container {
+    flex-direction: column;
+  }
+  .filters {
+    flex: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+ /* Estilos para el botón de filtros */
+    .filter-toggle {
+      background: #5cb85c;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      cursor: pointer;
+      display: none; /* Ocultar por defecto en pantallas grandes */
+      margin: 10px 0; /* Espaciado vertical */
+    }
+
+    /* Media query para mostrar el botón en móviles */
+    @media (max-width: 768px) {
+      .filter-toggle {
+        display: block; /* Mostrar el botón en móviles */
+      }
+      
+      .filters {
+        display: none; /* Ocultar filtros por defecto en móviles */
+      }
+    }
+
+    /* Siempre mostrar filtros en pantallas grandes */
+    @media (min-width: 769px) {
+      .filters {
+        display: block !important;
+      }
+    }
+  
+  .filters {
+    display: none; /* Ocultar filtros por defecto en móviles */
+  }
+}
